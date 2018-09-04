@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>La Torre de Hanoi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
+</head>
+<body>
+
+<!--  -->
+<div class="size1 overlay1">
+  <!--  -->
+  <div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
+    <h1 class="m2-txt1 txt-center p-b-25">
+      del otro lado de los espejos
+    </h1>
+
+    <div id="countdown" class="flex-w flex-c-m p-b-33">
+      <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+        <span class="l2-txt1 p-b-9 days">35</span>
+        <span class="s2-txt1">Days</span>
+      </div>
+
+      <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+        <span class="l2-txt1 p-b-9 hours">17</span>
+        <span class="s2-txt1">Hours</span>
+      </div>
+
+      <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+        <span class="l2-txt1 p-b-9 minutes">50</span>
+        <span class="s2-txt1">Minutes</span>
+      </div>
+
+      <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+        <span class="l2-txt1 p-b-9 seconds">39</span>
+        <span class="s2-txt1">Seconds</span>
+      </div>
+    </div>
+
+    <form class="w-full flex-w flex-c-m validate-form">
+
+      <div class="wrap-input100 validate-input where1"
+           data-validate="Valid email is required: ex@abc.xyz">
+        <input class="input100 placeholder0 s2-txt2" type="text" name="email"
+               placeholder="Enter Email Address">
+        <span class="focus-input100"></span>
+      </div>
+
+
+      <button class="flex-c-m size3 s2-txt3 how-btn1 trans-04 where1">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<!--===============================================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--===============================================================================================-->
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone.min.js"></script>
+<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<script>
+  $('#countdown').countdown100({
+    endtimeYear: 2018,
+    endtimeMonth: 12,
+    endtimeDate: 27,
+    endtimeHours: 23,
+    endtimeMinutes: 59,
+    endtimeSeconds: 0,
+    timeZone: "America/Buenos_Aires"
+  });
+</script>
+</body>
+</html>
