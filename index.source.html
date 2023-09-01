@@ -122,7 +122,6 @@
     <a href="javascript:window.alert('Buscando al fantasma de Mozart?\n\n['+new Date().getFullYear()+' - LTdH]\n\n')">π</a>
   </div>
 </footer>
-<script src="/js/1.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125169539-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -133,6 +132,16 @@
 
   gtag('js', new Date());
   gtag('config', 'UA-125169539-1');
+</script>
+<script>
+(function() {
+  if( !navigator.userAgentData.mobile ) {
+    const theScript = document.createElement('script');
+    theScript.type = 'text/javascript';
+    theScript.src = 'js/1.js';
+    document.body.appendChild(theScript);
+  }
+})();
 </script>
 </body>
 </html>
