@@ -1,6 +1,6 @@
 const audio = new Audio('/audios/scorpion.mp3');
 
-const konamiCode = ['ArrowLeft', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowDown', 'ArrowRight', 'ArrowLeft', 'ArrowLeft', 'ArrowRight', 'ArrowRight'];
+const konamiCode = ['ArrowLeft', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowLeft', 'ArrowRight', 'ArrowRight'];
 let konamiCodePosition = 0;
 
 document.addEventListener('keydown', function(e) {
