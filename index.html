@@ -1,1 +1,680 @@
-<!DOCTYPE html><html lang="es"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-942F3GBB8L"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-942F3GBB8L")</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="La Torre de Hanoi"><title>La Torre de Hanoi - Home</title><link rel="icon" type="image/x-icon" href="/images/favicon.png"><link href="/images/apple-touch-icon.png" rel="apple-touch-icon"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="/css/main.css"><meta itemprop="name" content="La Torre de Hanoi | Home"><meta itemprop="description" content="Sitio oficial La Torre de Hanoi"><meta itemprop="image" content="https://www.latorredehanoi.com/images/logo.png"><meta property="og:title" content="La Torre de Hanoi"><meta property="og:type" content="article"><meta property="og:description" content="Sitio oficial de La Torre de Hanoi"><meta property="og:url" content="https://www.latorredehanoi.com"><meta property="og:image" content="https://www.latorredehanoi.com/images/logo.png"><meta property="og:locale" content="es"><meta property="og:site_name" content="La Torre de Hanoi"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@latorredehanoi"><meta name="twitter:creator" content="@latorredehanoi"><meta name="twittter:url" content="https://www.latorredehanoi.com"><meta name="twitter:title" content="La Torre de Hanoi"><meta name="twitter:description" content="Sitio oficial de La Torre de Hanoi"><meta name="twitter:image" content="https://www.latorredehanoi.com/images/logo.png"></head><body><main><div class="container"><div class="row"><div class="col-12 align-self-center"><div class="menu"><ul class="list-inline"><li class="list-inline-item decorator">[</li><li class="list-inline-item active">Home</li><li class="list-inline-item decorator">|</li><li class="list-inline-item"><a href="/musica">M&uacute;sica</a></li><li class="list-inline-item decorator">|</li><li class="list-inline-item"><a href="https://www.instagram.com/latorredehanoi" target="_blank">Contacto</a></li><li class="list-inline-item decorator">]</li></ul></div><div class="content"><img src="/images/logo.png" alt="La Torre de Hanoi - Logo" class="img-fluid logo"></div><div class="player"><iframe width="290" height="122" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/725666106&color=%233c5464&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe></div><div class="social"><ul class="list-inline"><li class="list-inline-item"><a href="https://www.soundcloud.com/latorredehanoi" target="_blank" class="fa fa-soundcloud" aria-label="Soundcloud"></a></li><li class="list-inline-item"><a href="https://open.spotify.com/artist/0Pf4rNQ1P2ZY3UD8JsX9FS?si=Kq6DdUgqRVCf4tu5vFrtDg" target="_blank" class="fa fa-spotify" aria-label="Spotify"></a></li><li class="list-inline-item"><a href="https://music.youtube.com/channel/UCCD2weQBZpY1O1DJnDxdYGw?si=wygWzkebcP2J3ny9" target="_blank" class="fa fa-youtube" aria-label="YouTube"></a></li><li class="list-inline-item"><a href="https://music.apple.com/ar/artist/la-torre-de-hanoi/1462869548" target="_blank" class="fa fa-music" aria-label="Apple Music"></a></li></ul></div></div></div></div></main><footer><div class="fixed-bottom d-none d-xl-block pi"><a href="javascript:window.alert('Buscando al fantasma de Mozart?\n\n['+new Date().getFullYear()+' - latorredehanoi AT gmail DOT com]\n')">π</a></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>La Torre de Hanoi | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Torre de Hanoi">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <meta itemprop="name" content="La Torre de Hanoi | Home">
+  <meta itemprop="description" content="Sitio oficial La Torre de Hanoi">
+  <meta itemprop="image" content="https://www.latorredehanoi.com/images/logo.png">
+  <meta property="og:title" content="La Torre de Hanoi">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Sitio oficial de La Torre de Hanoi">
+  <meta property="og:url" content="https://www.latorredehanoi.com">
+  <meta property="og:image" content="https://www.latorredehanoi.com/images/logo.png">
+  <meta property="og:locale" content="es">
+  <meta property="og:site_name" content="La Torre de Hanoi">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@latorredehanoi">
+  <meta name="twitter:creator" content="@latorredehanoi">
+  <meta name="twittter:url" content="https://www.latorredehanoi.com">
+  <meta name="twitter:title" content="La Torre de Hanoi">
+  <meta name="twitter:description" content="Sitio oficial de La Torre de Hanoi">
+  <meta name="twitter:image" content="https://www.latorredehanoi.com/images/logo.png">
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">LA TORRE DE HANOI</div>
+    <nav class="nav-links">
+      <a href="#3PY9M">#3PY9M</a>
+      <a href="#DOLDLE">#DOLDLE</a>
+      <a href="https://www.instagram.com/latorredehanoi" target="_blank" class="fa fa-instagram" aria-label="Instagram"></a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="content">
+    <img src="/images/logo.png" alt="La Torre de Hanoi - Logo" class="img-fluid">
+  </div>
+</section>
+
+<main class="main-content">
+
+  <section class="album-section" id="3PY9M">
+    <div class="album-art">
+      <img src="https://i1.sndcdn.com/artworks-7Ocx0JUYzQz450iJ-yjzqRA-t500x500.jpg" alt="Arte de tapa - Primer Álbum">
+    </div>
+    <div class="album-info">
+      <h2>Tres Parcas Y Nueve Musas</h2>
+      <div class="album-meta">LP • 2026 • ~26m</div>
+
+      <div class="player-mock">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1EuLPIxRXV2kQCrF2unOhA?utm_source=generator&theme=0&si=380c37210bfe4bbb" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" onclick="toggleDetails('details-3py9m')">Tracklist</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="details-panel" id="details-3py9m">
+    <div class="details-grid">
+      <div class="lyrics">
+        <h3>LADO A</h3>
+        <div class="track-list-lyrics">
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t1')">1. Por el Aire<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t1">
+              Detrás de ese antifaz que esconde
+              tus ojos de ave rapaz, insomnes.
+              Rasgando el vestido, tu verdadero yo
+              se pierde en el limbo de otra reencarnación.
+              ♩
+              Afuera, se olía a tormentas
+              y a nuestro alrededor...
+              (Adentro) la piel se hacía ofrenda.
+              Luego de la implosión...
+
+              Despegué y volé por el aire.
+              Desperté y logré desafiar a mi gravedad.
+
+              Entonces volvió a quedarse quieta,
+              Brindándome a voluntad su néctar.
+              Después todo fue confuso y no sé qué pasó.
+              Lo que estaba inconcluso, nunca se terminó.
+
+              Despegué y volé por el aire.
+              Desperté y logré desafiar a mi gravedad.
+
+              Despegué y volé por el aire.
+              Desperté y logré descifrarme.
+              Llegué a conectarme,
+              alcancé a actualizarme a una nueva versión.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t2')">2. Desconectándonos<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t2">
+              Todo escaló muy alto.
+              Después se quedó flotando.
+              Sé que lo estás captando.
+              Estás disimulando.
+
+              Todo sucedió muy rápido.
+              Nos intoxicó despacio.
+              Y lo estoy apagando.
+              Estoy desconectándonos.
+              ♩
+              Todo se sintió intenso.
+              Como un apagón sin ecos.
+              Y fue real, fue cierto.
+              Estás repercutiendo.
+
+              Sé que lo estás captando.
+              Estoy desconectándonos.
+              ♩
+              Todo escaló muy alto.
+              Después se quedó flotando.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t3')">3. Títeres sin Cabeza<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t3">
+              Hey! Despertá, no sabés,
+              pero hay tiempo para que entres en razón.
+              Escuchá, aún no lo ves, pero si ponés un poco de atención
+              vas a notar que alrededor la realidad muestra sus grietas.
+
+              Hey! Esperá, no entendés.
+              No te ayuda quien te ofrece salvación.
+              Es difícil, lo sé, aceptar que la verdadera intención
+              es sujetarte en sumisión como a un títere sin cabeza, al que...
+
+              Al que están anestesiando.
+              Al que están desorientando.
+              Al que están manipulando
+              para que sea combustible de un sistema.
+              ♩
+              Hey! Sospechá, puede ser
+              que realmente no te dieran elección.
+              Te forzaron a ver a través de anteojos de un solo color,
+              que no registran más allá de la burbuja que le inventan.
+
+              Hey! Reaccioná, sos rehén.
+              Lo camuflan con trucos de distracción.
+              Te acostumbran a ser funcional a una estructura de ficción,
+              pero enfrentate a la verdad, tomá control y date cuenta, que...
+
+              Que te están anestesiando.
+              Que te están manipulando.
+              Que está todo diseñado
+              para que seas batería de una rueda.
+
+              Que te están anestesiando.
+              Que te están manipulando.
+              Que está todo diseñado
+              para que sea combustible de un sistema.
+              ♩
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t4')">4. No le Eches más Sal<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t4">
+              Fueron tiempos apagados,
+              sin saber, transicionando
+              entre capítulos en blanco
+              sin comienzo ni final.
+
+              Fueron noches muy oscuras,
+              sin hallar salida alguna.
+              Invadido por las dudas,
+              suspendido en un quizás.
+
+              Qué momentos traicioneros,
+              confesiones sin reflejo
+              que se ahogan en la carne
+              y se impregnan en los huesos.
+
+              Si todo fue pasajero, me ganaste cien a cero.
+              Y aún te queda la jugada del millón.
+
+              No le eches más sal a esta herida abierta.
+              No le eches más sal, que aún no se cierra.
+
+              Fueron tiempos de neblina,
+              de sueños hechos cenizas.
+              Escondido tras las ruinas
+              que dejó el temporal.
+
+              Fueron tardes en la nada,
+              dando vueltas sin un mapa.
+              Cargando el peso en la espalda
+              de algo que nunca será.
+
+              Qué momentos de errores,
+              dulces equivocaciones.
+              Hoy culpables sin condena
+              de la hora en el reloj.
+
+              Y te siento al lado mío, susurrándome al oído,
+              provocando otra hemorragia al corazón.
+              ♩
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lyrics">
+        <h3>LADO B</h3>
+        <div class="track-list-lyrics">
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t5')">1. Botas Vaqueras<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t5">
+              No tengas miedo, no va a morder.
+              Si querés fuego, acá tenés.
+              Tirá los dados, guiñame un ojo, contá hasta tres.
+
+              Vení más cerca, así lo ves.
+              Me da ternura tu timidez.
+              Poné la bala, soltá el gatillo, resplandecé.
+
+              No vas a creer lo que pasó.
+              Me vas a contar cuánto te gustó.
+              Ha de ser mejor de lo que te pensabas.
+              Y no vas a dormir hasta que salga el sol.
+
+              Te vas a vestir de botas vaqueras en busca de acción.
+
+              No pierdas tiempo, no va a volver.
+              Solo se tiene una sola vez.
+              Seguí tu instinto, olvidá las reglas, dejalo ser.
+
+              Sos dinamita, lo sabés bien.
+              Ya no te escondas tras la pared.
+              Volcá la nafta, encendé la mecha, miralo arder.
+
+              No vas a entender lo que te generó.
+              Te vas a decir que no fuiste vos.
+              Y ha de superar lo que te imaginabas,
+              la adrenalina en sangre hizo ebullición.
+
+              Te vas a vestir de botas vaqueras en busca de acción.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t6')">2. Laberintos<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t6">
+              Si lo pienso otra vez, tiene sentido
+              que todo sea tan así, tan complicado,
+              tan lleno de laberintos y de puertas
+              que se abren y se cierran.
+
+              Es que hay un fuego, ahí a la vista,
+              que no para de crecer.
+              Y aunque logremos controlarlo
+              siempre se vuelve a encender.
+
+              No se puede escuchar, hay mucho ruido.
+              Son muchas cosas dando vueltas y eXplotando
+              en miles de pedacitos de emociones que ni supe que existían.
+
+              Y en cada espejo dejo frases de canciones para vos.
+              Sin darme cuenta, voy buscándote a donde sea que voy.
+
+              A veces todo es luz, otras es niebla.
+              Y todo se hace gris en mi cabeza.
+              Y no lo ves, no lo ves, no lo ves mi amor.
+
+              Yo sé que no es normal, esto es distinto.
+              Pero tal vez, también te pasa lo mismo a vos.
+              Te pasa lo mismo?
+
+              Abrir los ojos no es tan fácil cuando de frente está el sol.
+              De vez en cuando nuestros pasos cruzarán su dirección.
+
+              Y aunque sean más las idas que las vueltas.
+              Yo te quiero abrazar por más que duela
+              otra vez. Otra vez, mi amor.
+              Y otra vez, y otra vez y otra vez mi amor.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t7')">7. Tobogán<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t7">
+              Vuela. Vuela por todo el lugar.
+              Y silba la energía que abandona en un ritual
+              las celdas de su cuerpo.
+
+              Mira. Mira desde el tobogán.
+              Y alcanza las estrellas que una vez juró bajar
+              para sembrar sonrisas.
+              ♩
+              Sueña. Sueña en su lugar feliz.
+              Se funde en los espacios que acompañaron su ir
+              en todos los caminos.
+
+              Que este viaje sea un punto de partida.
+              ♩
+              Tengo cosas que decirte todavía.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('3py9m-t8')">8. Pendeja<span>+</span></div>
+            <div class="track-lyric-content" id="3py9m-t8">
+              En qué nube te subiste que volviste hasta acá?
+              La puerta ya no está abierta.
+              Con qué estrella te chocaste que creíste iba a besar
+              tus mejillas coloradas?
+
+              Querés entrar. Quiero salir.
+              No se si ves, no hay nada ahí.
+              Podés gritar, podés pedir.
+              Sos transparente para mí, pendeja.
+
+              Te creíste ser la dueña, la princesa del lugar.
+              Merecedora de tributos.
+              Con tus aires de grandeza te paseabas la ciudad
+              haciéndote la difícil.
+
+              Pero querés algo de mí,
+              No lo aguantás, no lo medís.
+              Y te torcés y te doblás.
+              Se puede oler. Te delatás, pendeja.
+
+              No llores que no hay trato, disimulá el temblor.
+              Ya di el paso al costado, no juego más con vos.
+              No mires más, queda mal.
+              Date cuenta, pendeja.
+              ♩
+              No llores que no hay trato, disimulá el temblor.
+              Ya di el paso al costado, no juego más con vos.
+              No mires más, queda mal.
+              Date cuenta, pendeja.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="album-section" id="DOLDLE">
+    <div class="album-art">
+      <img src="https://i1.sndcdn.com/artworks-pg0QCevItOjoX9Gt-2fA8SA-t500x500.jpg" alt="Arte de tapa - Primer Álbum">
+    </div>
+    <div class="album-info">
+      <h2>Del Otro Lado de los Espejos</h2>
+      <div class="album-meta">LP • 2019 • ~28m</div>
+
+      <div class="player-mock">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1EuLPIxRXV2kQCrF2unOhA?utm_source=generator&si=2c095fa97c9f45fb" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" onclick="toggleDetails('details-doldle')">Tracklist</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="details-panel" id="details-doldle">
+    <div class="details-grid">
+      <div class="lyrics">
+        <h3>LADO A</h3>
+        <div class="track-list-lyrics">
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t1')">1. Anticuerpos<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t1">
+              Ya no tengo miedo de perderme en vos.
+              Suelto el aire y entrego al tiempo.
+              Y pensar que no había nada que pensar.
+
+              Vuelo alto y después me quiebro en dos.
+              Los placeres cotidianos ya no alcanzan. Pero entendé:
+              Soy carnívoro y a veces no lo quiero controlar.
+
+              Puedo alcanzarte, no estás tan lejos.
+              Podés ser vos sin respirar?
+
+              Rasguñando el espejo, buscando anticuerpos
+              y un secreto que ocultar.
+              Las manos en el cuello y gritos que caen del techo
+              pidiendo que apriete aún más.
+              ♩
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t2')">2. Cuando Estás Alrededor<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t2">
+              Todavía no me veo bien en tus ojos
+              Será que el rompecabezas nunca tuvo solución ?
+              No me acuerdo en qué quedamos o si me quedé en la nada.
+              Es que todo es tan confuso cuando estás alrededor.
+
+              Sería tan lindo no acordarme de las cosas que dijiste.
+              Y ahora parece que las calles me llevan de nuevo a vos.
+              Puede ser que te haya ocultado cuánto te necesitaba.
+              Es que todo es tan confuso cuando estás alrededor.
+              ♩
+              Todavía no te siento bien en mis ojos.
+              No hace falta que lo digas, es tan clara tu expresión.
+              El silencio es el mensaje que no quiere escuchar nadie.
+              Es que todo es tan confuso cuando estás alrededor.
+              ♩
+              Y es que todo es tan confuso cuando estás alrededor.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t3')">3. Neón<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t3">
+              Puede que no te interese saber más de mí
+              O que te hayas vestido tan linda para impresionarme.
+              Pisar tu tablero fue un negocio intenso mi amor.
+              Tan fría, tan lejos, tan sola. Vení a atormentarme.
+              (Vení!)
+              ♩
+              Puede que no me moleste internarme en tu idea.
+              Dejé mi revólver cargado a los pies del sillón.
+              Las sombras cruzando la calle miraban histéricas.
+              Adentro durante un momento todo se apagó.
+
+              Hiciste tu juego.
+              Yo jugué ese juego sin mirar.
+              Constelaste infiernos.
+              Yo tengo un infierno similar.
+
+              A todos nos llega el momento de pagar la cuenta
+              Y sabés que siempre tuve un poco de debilidad por vos.
+              Dejaste espejos de colores en todas las puertas,
+              Perseguía una estrella y choqué con tu luz de neón.
+
+              Hiciste tu juego.
+              Yo jugué ese juego sin mirar.
+              Constelaste infiernos.
+              Yo tengo un infierno similar.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t4')">4. A Destiempo<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t4">
+              Creo que el verano se nos terminó.
+              Siempre está nublado, ya no hace calor.
+              Es tiempo de cambios y de algo de introspección
+              para comprender  que ya no hay lugar
+              en el mundo, para un mundo hecho por los dos.
+
+              Vos y yo sabemos que no hay vuelta atrás.
+              Por más que intentemos nada va a cambiar.
+              Y no hay más apuesta para tratar de ganar
+              un respiro más de tiempo para hacernos mal...
+
+              Abramos los ojos, que tenemos que entender
+              que si vos ves algo, yo lo veo al revés.
+              Que vamos a destiempo hasta en nuestra propia canción.
+              Que ya no hay sol...
+
+              Siento que es momento de una decisión.
+              Estirar la cuerda ya no es lo mejor.
+              No quiero ir a penales, no se trata de ganar.
+              No tenés razón, no tengo razón.
+              A veces las cosas simplemente no van bien.
+
+              Abramos los ojos, es de día aún para ver
+              que si quiero algo, vos seguro no querés.
+              Que si no hubiera inercia no estaríamos acá.
+              Que ya no hay sol.
+              ♩
+              Abramos los ojos, va dejando de llover.
+              Puede que a destiempo, pero todo va estar bien.
+              Y aunque cada tanto, tu recuerdo vuelva a mí
+              ya sale el sol.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lyrics">
+        <h3>LADO B</h3>
+        <div class="track-list-lyrics">
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t5')">5. Desde lo Alto<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t5">
+              El rumor nos llega al oído
+              y despierta a gritos la ansiedad.
+              Un ritual pagano allá a lo lejos
+              invade de a poco la ciudad.
+
+              Se hará un gran festín en nuestro cielo.
+              Todos quieren tomar su lugar.
+              El Gran Mono espera en su epopeya.
+              Tiene un nuevo cuento que contar.
+
+              El aire corta el silencio, todo está por temblar
+              Puede que llueva y la tormenta no nos quiera evadir.
+              Pero al final vas a buscar a alguien para  abrazar
+              y compartir una sonrisa.
+
+              El secreto muere revelado.
+              Desfila ante todos la obsesión.
+              Cuando las luces se queden ciegas
+              aullarán los lobos a su dios.
+
+              La incertidumbre de un sueño nos volverá a hermanar.
+              Y en el rebote contra el suelo al fin dejaremos ir.
+              Cuando todo pase, el recuerdo traerá una vez más
+              lo que veías desde lo alto.
+              ♩
+              Las luces miran a los ojos, no les gusta esperar.
+              Los fuegos vuelan y el mundo vuelve a ser realidad.
+              Cuando todo pase el recuerdo traerá una vez más
+              lo que veías desde lo alto.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t6')">6. Interferencia<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t6">
+              Yo ya sé que me perdí,
+              no es que no quise encontrarte.
+              A veces reacciono así para no estrellarme tanto.
+
+              Tengo este caparazón,
+              si querés podés mirarme.
+              Pero no esperes que todo sea igual que antes.
+
+              Todo bien si sale mal,
+              no son tiempos de valientes.
+              Siempre es miedo a resbalar y a romperse en la caída.
+
+              Con tanta interferencia a nuestro alrededor
+              así y todo aún estamos vos y yo acá.
+
+              No me queda más lugar
+              en el tren de mis fantasmas.
+              Yo pensaba caminar y disfrutar del paisaje.
+
+              Es tanta la distancia que hay entre los dos
+              Y así y todo aún estamos vos y yo acá.
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t7')">7. Sobre el Jardín<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t7">
+              Viajo en el viento aterciopelado
+              de flores reinas de luz y miel.
+              Canta la noche en ecos cercanos.
+              Todo es tan fácil de explicar así.
+
+              Vámonos lejos, tomá mi mano.
+              Caen las nubes sobre el jardín.
+              Todo se tiñe de un color raro
+              que hace juegos con tu voz.
+
+              Ví las estrellas en mi ventana
+              y nada fue cierto cuando volví.
+              Trajo el día un camino incierto
+              y un simple recuerdo de los dos.
+              ♩
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-title" onclick="toggleLyric('doldle-t8')">8. Síndrome de Estocolmo<span>+</span></div>
+            <div class="track-lyric-content" id="doldle-t8">
+              Pasé mil noches escapando de un fantasma malhechor
+              que nublaba toda luz a mi alrededor.
+              Y divagando por las calles en un frío encantador
+              buscando un cuerpo asomado en una ventana.
+
+              Bañados en algún disfraz
+              fuimos perdiendo la inocencia.
+              Dios! En qué demonios estábamos pensando
+              cuando desvirgamos a una luna que se hacía pedazos ?
+
+              Y ahora qué comprás? Y ahora qué ofrecés?
+              Y ahora qué tenés para vender?
+              Y ahora qué buscás? De mí, qué más querés?
+              Sos llanto que no puedo sofocar.
+
+              Oscuras noches, ciudad blanca, a merced de tu vanidad,
+              vos siempre fuiste reina de mis soledades.
+              Yo fui tu esclavo tantas veces y nunca quise escapar
+              pero dejaste el candado abierto una tarde.
+
+              Y me perdiste y te perdí.
+              (dónde te encuentro?)
+              Y vi a una rosa perdiendo su única espina.
+
+              Y ahora qué comprás? Y ahora qué ofrecés?
+              Y ahora qué tenés para vender?
+              Y ahora qué buscás? De mí, qué más querés?
+              Sos llanto que no puedo sofocar.
+
+              Y estoy tan lleno de vos y soy tan pobre.
+              Y estoy tan loco por vos y soy tan cuerdo.
+              Y estoy tan lleno de vos y soy tan pobre.
+              Y estoy tan loco por vos y soy tan ciego…
+
+              Y ahora qué comprás? Y ahora qué ofrecés?
+              Y ahora qué tenés para vender?
+              Y ahora qué buscás? De mí, qué más querés?
+              Sos llanto que no puedo sofocar.
+              ♩
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="social-links">
+    <a href="https://www.soundcloud.com/latorredehanoi" target="_blank" class="fa fa-soundcloud" aria-label="Soundcloud"></a>
+    <a href="https://open.spotify.com/artist/0Pf4rNQ1P2ZY3UD8JsX9FS?si=Kq6DdUgqRVCf4tu5vFrtDg" target="_blank" class="fa fa-spotify" aria-label="Spotify"></a>
+    <a href="https://music.youtube.com/channel/UCCD2weQBZpY1O1DJnDxdYGw?si=wygWzkebcP2J3ny9" target="_blank" class="fa fa-youtube" aria-label="YouTube"></a>
+    <a href="https://music.apple.com/ar/artist/la-torre-de-hanoi/1462869548" target="_blank" class="fa fa-music" aria-label="Apple Music"></a>
+  </div>
+  <p>&copy; 2026 - La Torre de Hanoi.
+  <div class="dte-none d-xl-block pi" style="text-align:right;margin-right: 10px;">
+    <a href="javascript:window.alert('Buscando al fantasma de Mozart?')" style="color: gray">π</a>
+  </div>
+  </p>
+</footer>
+<script>
+    document.getElementsByClassName("logo")[0].onclick = ()=> window.location.reload();
+    // Función para mostrar/ocultar la ficha técnica completa
+    function toggleDetails(panelId) {
+        const panel = document.getElementById(panelId);
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+            // Hace un scroll suave hacia el panel expandido
+            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }
+
+    // Función para expandir las letras de cada canción de forma individual
+    function toggleLyric(lyricId) {
+        const lyric = document.getElementById(lyricId);
+        if (lyric.style.display === "block") {
+            lyric.style.display = "none";
+        } else {
+            lyric.style.display = "block";
+        }
+    }
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-942F3GBB8L"></script>
+<script>function gtag() {
+    dataLayer.push(arguments)
+}
+window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-942F3GBB8L")</script>
+</body>
+</html>
