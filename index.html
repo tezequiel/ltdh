@@ -365,9 +365,6 @@
   </div>
 
   <section class="album-section" id="DOLDLE">
-    <div class="album-art">
-      <img src="https://i1.sndcdn.com/artworks-pg0QCevItOjoX9Gt-2fA8SA-t500x500.jpg" alt="Arte de tapa - Primer Álbum">
-    </div>
     <div class="album-info">
       <h2>Del Otro Lado de los Espejos</h2>
       <div class="album-meta">LP • 2019 • ~28m</div>
@@ -386,6 +383,9 @@
       <div class="btn-group">
         <button class="btn" onclick="toggleDetails('details-doldle')">Ver +</button>
       </div>
+    </div>
+    <div class="album-art">
+      <img src="https://i1.sndcdn.com/artworks-pg0QCevItOjoX9Gt-2fA8SA-t500x500.jpg" alt="Arte de tapa - Primer Álbum">
     </div>
   </section>
 
@@ -431,7 +431,7 @@
               Es que todo es tan confuso cuando estás alrededor.
               ♩
               Todavía no te siento bien en mis ojos.
-              No hace falta que lo digas, es tan clara tu expresión.
+              No hace falta que lo digas, es tan clara tu eXpresión.
               El silencio es el mensaje que no quiere escuchar nadie.
               Es que todo es tan confuso cuando estás alrededor.
               ♩
@@ -662,7 +662,7 @@
   </p>
 </footer>
 <script>
-    document.getElementsByClassName("logo")[0].onclick = ()=> window.location.reload();
+    document.getElementsByClassName("logo")[0].onclick = ()=> window.location.replace('/');
     // Función para mostrar/ocultar la ficha técnica completa
     function toggleDetails(panelId) {
         const panel = document.getElementById(panelId);
