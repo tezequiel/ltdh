@@ -286,7 +286,7 @@ header {
     display: none;
     padding-top: 15px;
     font-family: monospace;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     line-height: 1.7;
     color: var(--text-secondary);
     white-space: pre-line;
