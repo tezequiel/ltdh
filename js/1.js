@@ -19,3 +19,23 @@ document.addEventListener('keydown', function(e) {
 function activateCheats() {
   audio.play();
 }
+
+function toggleDetails(panelId) {
+  const panel = document.getElementById(panelId);
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+    // Hace un scroll suave hacia el panel expandido
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+function toggleLyric(lyricId) {
+  const lyric = document.getElementById(lyricId);
+  if (lyric.style.display === "block") {
+    lyric.style.display = "none";
+  } else {
+    lyric.style.display = "block";
+  }
+}
