@@ -1,4 +1,7 @@
 const audio = new Audio('/audios/scorpion.mp3');
+audio.addEventListener('ended', () => {
+  window.location.replace("https://theuselessweb.com/")
+})
 
 const konamiCode = ['ArrowLeft', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowDown', 'ArrowRight', 'ArrowLeft', 'ArrowLeft', 'ArrowRight', 'ArrowRight'];
 let konamiCodePosition = 0;
