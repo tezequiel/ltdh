@@ -1,1 +1,357 @@
-body{background-color: rgb(245, 245, 247);}a{color: gray; text-decoration: none;}a:hover, a:focus{color: gray; text-decoration: none;}li.list-inline-item.active{color: black !important;}li.list-inline-item.decorator{color: gray !important;}@font-face{font-display: swap;}.fa{font-size: 30px; text-decoration: none;}.fa:hover{opacity: 0.7;}.menu{padding-top: 20px; text-align: center;}.content{padding-top: 25px; text-align: center; color: gray;}.logo{width: 200px; height: 200px}.album h1{padding-top: 20px;}.album h1{text-align: center; font-size: 15px; color: black; padding-bottom: 20px;}.album span{font-size: 11px; margin-left: 10px;}.album .cover{text-align: right;}.album .cover img{max-width: 80%;}.album .tracklist{text-align: left;}.album .tracklist ol{color: gray; font-size: 12px; margin-left: -40px; text-align: left;}.player{padding-top: 50px; text-align: center;}.social{padding-top: 30px; text-align: center;}.pi{margin-right: 10px; margin-bottom: 10px; font-size: 12px; text-align: right;}.qr{padding-top: 50px; text-align: center;}
+/* --- VARIABLES Y CONFIGURACIÓN BASE (Estilo Apple Dark) --- */
+:root {
+    --bg-color: #000000;
+    --card-bg: #161617;
+    --text-main: #f5f5f7;
+    --text-secondary: #86868b;
+    --accent: #2997ff;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-stack);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* --- NAVEGACIÓN --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-family: Impact, fantasy;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-main);
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #fff 0%, #86868b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 600px;
+    font-weight: 400;
+}
+
+/* --- SECCIÓN DISCOS --- */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 100px 20px;
+}
+
+.album-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .album-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 0;
+        text-align: center;
+    }
+    .hero h1 { font-size: 2.2rem; }
+}
+
+/* Arte de tapa */
+.album-art {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estado "En camino" */
+.album-art.upcoming::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(41,151,255,0.1) 0%, rgba(0,0,0,0) 70%);
+    animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.5; }
+    100% { transform: scale(1.1); opacity: 1; }
+}
+
+.upcoming-placeholder {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* Info del Álbum */
+.album-info h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.album-meta {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Reproductor Ficticio / Embed de Spotify */
+.player-mock {
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    min-height: 80px;
+}
+
+/* Botones de acción */
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .btn-group { justify-content: center; }
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--text-main);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+}
+
+/* --- ACORDEONES (Ficha Técnica y Letras) --- */
+.details-panel {
+    grid-column: 1 / -1;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: -30px;
+    display: none; /* Se maneja con JS */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .details-grid { grid-template-columns: 1fr; }
+}
+
+.credits h3, .lyrics h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+.credits p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #d2d2d7;
+    margin-bottom: 10px;
+}
+
+/* Lista de letras */
+.track-list-lyrics {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.track-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 10px;
+}
+
+.track-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-title:hover { color: var(--accent); }
+
+.track-lyric-content {
+    display: none;
+    padding-top: 15px;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    white-space: pre-line;
+}
+
+/* --- SUSCRIPCIÓN MINIMALISTA --- */
+.newsletter-section {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.newsletter-section h3 { margin-bottom: 10px; font-weight: 500; }
+.newsletter-section p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; }
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    background: #000;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: var(--font-stack);
+    outline: none;
+}
+.newsletter-form input:focus { border-color: var(--accent); }
+
+.newsletter-form button {
+    background: var(--text-main);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-size: 30px;
+}
+
+.social-links a:hover { color: var(--text-secondary); }
