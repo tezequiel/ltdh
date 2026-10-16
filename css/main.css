@@ -60,6 +60,18 @@ header {
     transition: color 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .nav-links a {
+        font-size: 0.75rem;
+        margin-left: 12px;
+    }
+    .logo {
+        font-weight: 300;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+}
+
 .nav-links a:hover {
     color: var(--text-main);
 }
@@ -115,6 +127,9 @@ header {
         padding: 60px 0;
         text-align: center;
     }
+    .album-section:nth-of-type(2) .album-art {
+        order: -1;
+    }
     .hero h1 { font-size: 2.2rem; }
 }
 
@@ -139,7 +154,6 @@ header {
     object-fit: cover;
 }
 
-/* Estado "En camino" */
 .album-art.upcoming::before {
     content: '';
     position: absolute;
