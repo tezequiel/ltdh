@@ -655,11 +655,12 @@
   <p>&copy; <script>document.write(new Date().getFullYear())</script> La Torre de Hanoi 🇦🇷 Buenos Aires, Argentina. Humedad.</p>
   <p>P.D.: Yo te amo. BEATLES.</p>
   <div class="dte-none d-xl-block pi" style="text-align:right;margin-right: 10px;">
-    <a href="javascript:window.alert('Buscando al fantasma de Mozart ? 👉 https://www.youtube.com/shorts/IQoy9XtR9Q4')" style="color: gray">π</a>
+    <a style="color: gray; cursor: pointer">π</a>
   </div>
 </footer>
 <script>
     document.getElementsByClassName("logo")[0].onclick = ()=> window.location.replace('/');
+    document.querySelector(".pi a").onclick = ()=> alert('Buscando al fantasma de Mozart ? 👉 https://www.youtube.com/shorts/IQoy9XtR9Q4');
 </script>
 <script async src="js/1.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-942F3GBB8L"></script>

@@ -35,6 +35,11 @@ function toggleDetails(panelId) {
 }
 
 function toggleLyric(lyricId) {
+  document.querySelectorAll(".track-lyric-content").forEach(it => {
+    if(it.id !== lyricId) {
+      it.style.display = "none";
+    }
+  })
   const lyric = document.getElementById(lyricId);
   if (lyric.style.display === "block") {
     lyric.style.display = "none";
