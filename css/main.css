@@ -301,11 +301,11 @@ footer {
 }
 
 .social-links a {
-    color: var(--text-main);
+    color: var(--text-secondary);
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s;
     font-size: 30px;
 }
 
-.social-links a:hover { color: var(--text-secondary); }
+.social-links a:hover { color: var(--text-main); }
